@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            width: 600px;
+            margin: auto;
+            border: 1px solid gray;
+        }
+
+        .contant {
+            display: flex;
+        }
+
+        nav,
+        ad {
+            flex-basis: 130px;
+        }
+
+        section {
+            flex-basis: 400px;
+            padding: 10px;
+            height: 500px;
+        }
+
+        header {
+            border-bottom: 1px solid gray;
+            text-align: center;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            border-right: 1px solid gray;
+            flex-shrink: 0;
+        }
+
+        ad {
+            border-left: 1px solid gray;
+            flex-shrink: 0;
+            background-color: black;
+        }
+        
+        ad img {
+            width: 130px;
+            height: 190px;
+        }
+        
+        ad p {
+            color: white;
+        }
+        
+        .error img {
+            position: absolute;
+            width: 400px;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>유클팟!</h1>
+        </header>
+
+        <div class="contant">
+            <nav>
+                <ul>
+                    <li>김진돌</li>
+                    <li>안허읅</li>
+                    <li>강안녕</li>
+                    <li>여인삼</li>
+                    <li>김라을</li>
+                    <li>이노아</li>
+                    <li>김흐갸</li>
+                    <li>김주비</li>
+                </ul>
+            </nav>
+
+            <section>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, veniam nesciunt quae fugiat tempora exercitationem consequuntur nihil, voluptatum velit asperiores animi laboriosam, quos earum nostrum error in laborum dolorem accusantium!
+            </section>
+
+            <ad>
+                <img src="/img/1.png" alt="">
+                <p>
+                    광고
+                </p>
+            </ad>
+        </div>
+
+        <footer>
+            copy right 2020 upot
+        </footer>
+        
+        <div class="error" >
+            <img src="/img/2.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
